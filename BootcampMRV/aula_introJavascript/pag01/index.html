@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página JS CSS HTML5</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body onload="load()">
+    <h1>Minha página com HTML5, CSS e JS</h1>
+    <button type="button" onclick="botao()">Clique aqui</button>
+    <h3 id="agradecimento" onclick="redirecionar()"></h3>
+
+    <p id="moverMouse" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+    <p id="moverMouse2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+
+    <p>O onmouseover acontece quando o mouse é passado em cima do conteúdo e o onmouseout é quando o mouse sai de cima do conteúdo</p>
+
+    <select onchange="funcaoChange(this)">
+        <option value="0"></option>
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+    <p>onchange coleta o value</p>
+</body>
+</html>

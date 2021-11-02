@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Itens</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+        
+        .flexStart{
+            align-items: flex-start;
+        }
+
+        .flexEnd{
+            align-items: flex-end;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .baselineClass{
+            align-items: baseline;
+        }
+
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALIGN ITEMS (colunas)</h1>
+
+    <h2>Flex-start</h2>
+    <section class="container flexStart column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Flex-end</h2>
+    <section class="container flexEnd column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Center</h2>
+    <section class="container center column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis, corporis alias voluptatibus quisquam, facere</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <section class="container stretch column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis, corporis alias voluptatibus quisquam, facere</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container baselineClass column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Alinhamento central à tela</h2>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur dolores exercitationem corporis sapiente in, consectetur assumenda mollitia asperiores autem porro quod non dolore est quisquam qui. Maxime, itaque harum!</div>
+    </section>
+
+</body>
+</html>

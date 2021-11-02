@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Itens</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flexStart{
+            align-items: flex-start;
+        }
+
+        .flexEnd{
+            align-items: flex-end;
+        }
+
+        .baselineClass{
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALIGN ITEMS (linhas)</h1>
+
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis, corporis alias voluptatibus quisquam, facere</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis, corporis alias voluptatibus quisquam, facere</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Flex-start</h2>
+    <section class="container flexStart">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Flex-end</h2>
+    <section class="container flexEnd">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia neque omnis</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container baselineClass">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais texto. Lorem ipsum</div>
+    </section>
+
+</body>
+</html>

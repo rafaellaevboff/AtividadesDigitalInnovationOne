@@ -4,7 +4,7 @@
 
 ### caso os itens estejam ocupando 100% de todo o container, ela não se aplica
 
-#
+<br/>
 
 ## Variações
 - **flex-start**: início do container;

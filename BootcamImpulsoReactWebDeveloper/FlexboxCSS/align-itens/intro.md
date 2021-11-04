@@ -1,10 +1,10 @@
 # ALIGN ITEMS
 
 - trata do alinhamento dos flex itens de acordo com o eixo do container;
-
 - o alinamento é diferente quando os itens estão em colunas ou linhas;
-
 - permite o alinhamento central no eixo vertical.
+
+<br/>
 
 ## TIPOS DE ALINHAMENTO
 - **center**: alinhamento dos itens ao centro;

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h3, initial-scale=1.0">
+    <title>Fundamentos - Flex Grow</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .item{
+            background-color: rgb(255, 0, 0);
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .fg0{
+            flex-grow: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+
+        .fg3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <h4>FLEX-GROW define proporcionalidade de crescimento dos itens, respeita o tamanho dos conteúdos internos.</h4>
+
+    <h2>EXEMPLOs:</h2>
+
+    <div class="flex-container">
+        <div class="item fg0">A</div>
+        <div class="item fg0">B</div>
+        <div class="item fg0">C</div>
+        <div class="item fg0">D</div>
+    </div>
+
+    <h3>flex-grow: alternados (1 e 2)</h3>
+    <div class="flex-container">
+        <div class="item fg1">A</div>
+        <div class="item fg2">B</div>
+        <div class="item fg2">C</div>
+        <div class="item fg1">D</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="item fg2">AAA</div>
+        <div class="item fg2">BBBBBB</div>
+        <div class="item fg2">C</div>
+        <div class="item fg2">DDDD</div>
+    </div>
+</body>
+</html>

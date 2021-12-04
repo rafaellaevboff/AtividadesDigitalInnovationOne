@@ -59,14 +59,14 @@ class ContaCorrente extends ContaBancaria{
 }
 
 class ContaPoupanca extends ContaBancaria{
-    constructor(agencia, numero, saldo, cartaoCredito){
+    constructor(agencia, numero, saldo){
         super(agencia, numero, saldo);
         this.tipo = 'poupança';
     }
 }
 
 class ContaUniversitaria extends ContaBancaria{
-    constructor(agencia, numero, cartaoCredito){
+    constructor(agencia, numero){
         super(agencia, numero);
         this.tipo = 'universitária';
     }
@@ -81,3 +81,8 @@ class ContaUniversitaria extends ContaBancaria{
         }
     }
 }
+
+/*
+Para criar uma conta basta:
+const nomeConta = new ContaCorrente/ContaPoupanca/ContaUniversitaria(ag, num, (true ou false se for ContaCorrente, por causa do cartão de crédito))
+*/

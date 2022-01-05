@@ -50,6 +50,7 @@ public class DesafiosCodigos {
     }
 
     public static void compras(){
+        /*https://web.dio.me/coding/desafios-java-developer/algorithm/macpronalts?back=/track/spread-java-developer*/
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
         Locale.setDefault(new Locale("en", "US"));
@@ -79,6 +80,7 @@ public class DesafiosCodigos {
     }
 
     public static void fusoHorario() {
+        /*https://web.dio.me/coding/desafios-java-developer/algorithm/fuso-horario?back=/track/spread-java-developer*/
         Scanner sc = new Scanner(System.in);
         System.out.println("Verificar horário de chegada na cidade.");
         System.out.println("Horário de saída:");
@@ -96,6 +98,7 @@ public class DesafiosCodigos {
     }
 
     public static void parImpar(){
+        /*https://web.dio.me/coding/desafios-java-developer/algorithm/par-ou-impar?back=/track/spread-java-developer*/
         Scanner leitor = new Scanner(System.in);
         System.out.println("Digite quantas vezes deseja verificar:");
         int N = leitor.nextInt();
@@ -120,6 +123,7 @@ public class DesafiosCodigos {
     }
 
     public static void dama(){
+        /*https://web.dio.me/coding/desafios-java-developer/algorithm/dama?back=/track/spread-java-developer*/
         Scanner sc = new Scanner(System.in);
         int x1,y1,x2,y2;
         //se estiver na mesma linha ou mesma coluna ou mesma diagonal, gasta 1 movimento
